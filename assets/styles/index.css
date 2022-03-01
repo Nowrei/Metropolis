@@ -6,7 +6,7 @@
 
 body{
 
-    background-color:#8c969d;
+    background-color:#3d4042;
 }
 
 .nav {
@@ -61,7 +61,7 @@ body{
 
 .header{
 
-    background: url('../img/photo-1489599849927-2ee91cede3ba.jfif');
+    background: url('../img/imageedit_1_6969385592.jpg');
     height: 400px;
     width:100%;
     background-position-y: 500px;
@@ -84,26 +84,110 @@ body{
 
 .vosu {
 
-    width: 100%;
-    height: 500px;
-    background-color: grey;
+    width: 97%;
+    height: 400px;
     display: flex;
     flex-direction: row;
+    padding: 50px 20px;
+    justify-content: space-around;
     
 
 }
 
 .metro{
 
-    width:50%;
-    height: 500px;
-    background-color: red;
+    width:40%;
+    height: 400px;
+    background: url("../img/istockphoto-534129330-612x612.jpg");
+
 
 }
 
+hr{
+
+  background-color: black;
+  border-color: black;
+  height: 300px;
+  margin-top: 50px;
+}
 .descri{
 
-    width:50%;
-    height: 500px;
-    background-color: aquamarine;
+    width:35%;
+    height: 400px;
+    padding: 0px 10px;
+    
+}
+
+.descri h2 {
+
+  font-family: 'Merienda', cursive;
+  padding: 26px 30px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.descri p {
+
+  font-size: 30px;
+  justify-content: center;
+  color: white;
+}
+
+.descri span{
+
+  font-family: 'Merienda', cursive;
+}
+
+.parallax {
+
+  width: 100%;
+  height: 400px;
+  background: url("../img/le-voyage-dans-la-lune.jpg");
+  
+}
+
+.metropolis{
+
+  width: 100%;
+  height: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.arthas{
+
+  width: 50%;
+  height: 400px;
+  background-color: rgb(219, 216, 216);
+}
+.jaina {
+
+  width: 50%;
+  height: 400px;
+  background: url("../img/164612268745710998.jfif");
+
+}
+
+.arthas h2{
+
+  font-family: 'Merienda', cursive;
+  padding: 26px 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.arthas p{
+
+  font-size: 30px;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.arthas span{
+
+  font-family: 'Merienda', cursive;
 }
