@@ -7,6 +7,7 @@
 body{
 
     background-color:#3d4042;
+    box-sizing: border-box;
 }
 
 .nav {
@@ -62,9 +63,9 @@ body{
 .header{
 
     background: url('../img/imageedit_1_6969385592.jpg');
-    height: 400px;
+    height: 700px;
     width:100%;
-    background-position-y: 500px;
+    background-position-y: -300px;
     z-index: -1;
     background-size: cover;
 }
@@ -76,7 +77,7 @@ body{
     font-size: 100px;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 128px 0;
+    padding: 217px 0;
     color: white;
     
 }
@@ -139,21 +140,57 @@ hr{
   font-family: 'Merienda', cursive;
 }
 
-.parallax {
-
+.parallax{
+  position: relative;
   width: 100%;
-  height: 400px;
-  background: url("../img/le-voyage-dans-la-lune.jpg");
-  
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.metropolis{
+.parallax:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #18191a, transparent);
+  z-index: 10000;
+}
+.parallax:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #030d14;
+  z-index: 10000;
+  mix-blend-mode: color;
+
+}
+.parallax img{
+  position: absolute;
+  top: 108px;
+  left: 0;
+  width: 100%;
+  height: 157%;
+  object-fit: cover;
+  pointer-events: none;
+  align-content: right;
+
+}
+
+.metropolis{ 
 
   width: 100%;
   height: 400px;
   height: 400px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
 
 
 }
@@ -161,15 +198,16 @@ hr{
 .arthas{
 
   width: 50%;
-  height: 400px;
+  height: 430px;
   background-color: rgb(219, 216, 216);
+  
 }
 .jaina {
 
   width: 50%;
-  height: 400px;
+  height: 430px;
   background: url("../img/164612268745710998.jfif");
-
+  
 }
 
 .arthas h2{
@@ -178,6 +216,7 @@ hr{
   padding: 26px 30px;
   text-align: center;
   font-size: 30px;
+  margin-top: 30px;
 }
 
 .arthas p{
@@ -185,9 +224,106 @@ hr{
   font-size: 30px;
   justify-content: center;
   padding: 10px 10px;
+  margin-top: 30px;
 }
 
 .arthas span{
 
   font-family: 'Merienda', cursive;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 160px 50px 5 50px;
+  height: 18%;
+  background: rgba(26, 24, 24, 0.74);
+
+}
+
+footer p {
+
+  font-family: 'Merienda', cursive;
+  color:white
+}
+
+footer h3 {
+  padding: 0 0 60px 0;
+  font-size: 2.5em;
+  color: white;
+  font-family: 'Merienda', cursive;
+}
+
+.footer-icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: 0;
+  color: white;
+}
+.network {
+  font-size: 4em;
+  border: 1px solid #d6d6d6;
+  padding: 30px 45px;
+  color: #ffffff;
+  z-index: -1 !important;
+  border-radius: 50%;
+}
+.network:hover {
+  background: #353535;
+  color: #e2dedb;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+  margin: -20 auto;
+  margin-top: 5%;
+  padding-top: 15px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
+  margin-bottom: 0;
+  font-family: 'Merienda', cursive;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  38% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.arrow a {
+  font-size: 3em;
+  border: none;
+  color: #000000;
+}
+.arrow:hover i {
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 1.2em;
+  letter-spacing: 0.7em;
+  margin-bottom: 0;
+}
+
+
+
+@media (max-widht: 320px) {
+  .network {
+    font-size: 0.8em;
+    margin-left: -5%;
+    margin: 0;
+  }
+  .footer p {
+    font-size: 1.2em;
+  }
 }
