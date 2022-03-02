@@ -7,6 +7,6 @@ let bg = document.getElementById("bg");
                 var value = window.scrollY;
 
                 bg.style.top = value*0 + 'px';
-                moon.style.left = -value*0.6 + 'px';
+                moon.style.left = -value*0.8 + 'px';
               
             })

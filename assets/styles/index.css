@@ -10,38 +10,98 @@ body{
     box-sizing: border-box;
 }
 
+
+button {
+  display: block;
+  background: white;
+  margin:0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding:0.8em 2em;
+  border-radius: 5px;
+  border:0;
+}
 .nav {
 
     width: 100%;
     background-color:black;
     position: sticky;
     z-index: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
   }
   
   .nav > .nav-header {
     display: inline;
   }
   
-  .nav > .nav-header > .nav-signup {
+  .nav > .nav-header > .nav-signup > input{
     display: inline-block;
     font-size: 22px;
-    padding: 18px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     margin-left: 70px;
+
+    background-color: #343536;
+    color: white;
+    border: solid 1px #343536;
+    border-radius: 2vh;
+    margin-top: 10px;
+    
+  }
+
+  .nav > .nav-header > .nav-signup > input:hover{
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 70px;
+    background-color: #777272;
+    color: white;
+    border: solid 1px rgb(104, 101, 101);
+    border-radius: 2vh;
+    margin-top: 10px;
+    
   }
   
-  .nav > .nav-btn {
-    display: none;
-  }
   
   .nav > .nav-signin {
     display: inline;
     float: right;
     font-size: 14px;
     margin-right: 50px;
-    margin-top: 8px;
+    margin-top: 15px;
     border: solid 3px;
-    border-color: red;
     border-radius: 1vh;
+    background-color: #030d14;
+    appearance: none;
+  }
+
+  .nav > .nav-signin > input{
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    background-color: #343536;
+    color: white;
+    border: solid 1px #343536;
+    border-radius: 2vh;
+    margin-top: -5px;
+}
+    
+  
+
+  .nav > .nav-signin > input:hover{
+
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    background-color: #777272;
+    color: white;
+    border: solid 1px rgb(104, 101, 101);
+    border-radius: 2vh;
+    margin-top: -5px;
   }
   
   .nav > .nav-signin > a {
@@ -175,7 +235,7 @@ hr{
   position: absolute;
   top: 108px;
   left: 0;
-  width: 100%;
+  width: 127%;
   height: 157%;
   object-fit: cover;
   pointer-events: none;
@@ -190,9 +250,7 @@ hr{
   height: 400px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
-
-
+ 
 }
 
 .arthas{
@@ -238,6 +296,7 @@ footer {
   padding: 160px 50px 5 50px;
   height: 18%;
   background: rgba(26, 24, 24, 0.74);
+  margin-top: 30px;
 
 }
 
@@ -248,7 +307,7 @@ footer p {
 }
 
 footer h3 {
-  padding: 0 0 60px 0;
+  padding: 15px 0 60px 0;
   font-size: 2.5em;
   color: white;
   font-family: 'Merienda', cursive;
@@ -280,28 +339,16 @@ footer h3 {
   margin: -20 auto;
   margin-top: 5%;
   padding-top: 15px;
-  animation: arrow linear 1.5s;
-  animation-iteration-count: infinite;
   margin-bottom: 0;
   font-family: 'Merienda', cursive;
+  color: #312f2f;
 }
 
-@keyframes arrow {
-  0% {
-    transform: translateY(0px);
-  }
-  38% {
-    transform: translateY(8px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 
 .arrow a {
   font-size: 3em;
   border: none;
-  color: #000000;
+  color: #b9b3b3;
 }
 .arrow:hover i {
   transform: scale(1.6);
@@ -325,5 +372,74 @@ footer p {
   }
   .footer p {
     font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+
+  .parallax{
+
+    display:none;
+  }
+
+  .header{
+
+    justify-content: center;
+    height: 350px;
+  }
+
+  .header h1{
+
+    text-align: center;
+    padding:0 40px;
+  }
+
+  .vosu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 720px;
+  }
+
+  .metro{
+    width: 65%;
+    height: 400px;
+  }
+
+  .descri{
+
+    width: 100%;
+    height: 400px;
+    padding: 30px 90px;
+  }
+
+  hr{
+
+    display: none;
+  }
+
+  .metropolis{
+
+    display: flex;
+    flex-wrap:wrap-reverse;
+  
+  }
+
+  .jaina{
+
+    width: 100%;
+    height: 400px;
+    background-position:cover;
+    background-position-x:150px ;
+  }
+
+  .arthas{
+
+    width: 100%;
+    height: 400px;
+  }
+
+  .footer{
+
+    margin-top: 0px;
   }
 }
