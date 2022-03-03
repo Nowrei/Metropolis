@@ -326,7 +326,7 @@ footer h3 {
   border: 1px solid #d6d6d6;
   padding: 30px 45px;
   color: #ffffff;
-  z-index: -1 !important;
+  z-index: 1;
   border-radius: 50%;
 }
 .network:hover {
