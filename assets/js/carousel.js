@@ -70,3 +70,4 @@ let imgObject = [
   });
   
   loadGallery();
+  

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+
+  background-color:#3d4042;
+}
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
@@ -38,7 +42,7 @@
   float: right;
   font-size: 14px;
   margin-right: 50px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .nav > .nav-links > a {
@@ -81,11 +85,7 @@
   margin-top: 245px;
 
 }
-#mainView:hover {
-  transform: scale(1.2);
-  transition: all 1s;
-   
-}
+
 
 #leftView {
   height: 500px;
@@ -158,10 +158,317 @@
   box-sizing: border-box;
 }
 
+.allemand body .owl-carousel.owl-loading {
+  opacity: 1;
+  display: block;
+  text-align: center;
+}
+
+.allemand .framebox {
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+    margin-top: 284px;
+}
+
+
+.allemand .owl-prev,.owl-next{
+font-size: 30px;
+background: #3d4042;
+color: white;
+border: 0;
+margin: 7px;
+}
+
+.allemand .owl-prev:hover,.owl-next:hover,.owl-prev:focus,.owl-next:focus{
+  outline: none;
+}
+.allemand .owl-item {
+  border-radius: 4px;
+}
+.allemand a.item {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 78px 30px;
+}
+.allemand .item:hover{
+  text-decoration-line: none;
+}
+ .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: block;
+  margin-top: 10px;
+}
+body .owl-carousel .owl-dots, 
+body .owl-carousel .owl-nav {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+body .owl-carousel .owl-dots.disabled, 
+body .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.owl-dot{
+  display: none;
+}
+
+
+.allemand .item1{
+  
+background-image: url("../img/4f091489f8ac78ceb84b3cd38ab5b36e.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+background-position-y: -5px;
+background-position-x: 0px;
+}
 
 
 
+.allemand .item2{
+  
+  background-image: url('../img/51UqTIP85FL._AC_.jpg');
+  background-position-y: 0px;
+  background-position-x: 5px;
+}
 
+.allemand .item3{
+  
+  background-image: url('../img/nosferatu-1922-us-poster.jpg');
+  background-position-y: -4px;
+  background-position-x: 3px;
+}
+.allemand .item4{
+  
+  background-image: url('../img/a75393a29a6536878a47fa765924e699--dr-caligari-le-cabinet.jpg');
+  background-position-y: -4px;
+  background-position-x: 3px;}
+.allemand .item5{
+  
+  background-image:url('../img/Le_Testament_du_docteur_Mabuse.jpg');
+  background-position-x: -20px;
+  background-position-y: -8px;} 
+
+.burlesque body .owl-carousel.owl-loading {
+  opacity: 1;
+  display: block;
+  text-align: center;
+}
+
+.burlesque .framebox {
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+
+.burlesque .owl-prev,.owl-next{
+font-size: 30px;
+background: #3d4042;
+color: white;
+border: 0;
+margin: 7px;
+}
+.burlesque .owl-prev:hover,.owl-next:hover,.owl-prev:focus,.owl-next:focus{
+  outline: none;
+}
+.burlesque .owl-item {
+  border-radius: 4px;
+}
+.burlesque a.item {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+
+  cursor: pointer;
+  padding: 78px 30px;
+}
+.burlesque .item:hover{
+  text-decoration-line: none;
+}
+ .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: block;
+  margin-top: 10px;
+}
+body .owl-carousel .owl-dots, 
+body .owl-carousel .owl-nav {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+body .owl-carousel .owl-dots.disabled, 
+body .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.owl-dot{
+  display: none;
+}
+
+
+.burlesque .item1{
+  
+background-image: url("../img/safety-last-11.jpg");
+background-position-y: -7px;
+background-position-x: 0px;
+}
+
+
+
+.burlesque .item2{
+  
+  background-image: url('../img/557441.jpg');
+  background-position-y: -9px;
+  background-position-x: -18px;
+}
+
+.burlesque .item3{
+  
+  background-image: url('../img/L_Operateur\ \(1\).jpg');
+  background-position-y: -18px;
+  background-position-x: -9px;
+}
+.burlesque .item4{background-image: url('../img/Welcome_Danger_poster.jpg');
+  background-position-y: -14px;
+  background-position-x: 3px;;}
+
+.burlesque .item5{
+  
+  background-image:url('../img/The_Kid_Brother_poster.jpg');
+  background-position-y: -35px;
+  background-position-x: -10px;
+} 
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 160px 50px 5 50px;
+  height: 18%;
+  background: rgba(26, 24, 24, 0.74);
+ padding-top: 30px;
+
+}
+
+footer p {
+
+  font-family: 'Merienda', cursive;
+  color:white
+}
+
+footer h3 {
+  padding: 15px 0 60px 0;
+  font-size: 2.5em;
+  color: white;
+  font-family: 'Merienda', cursive;
+}
+
+.footer-icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: 0;
+  color: white;
+}
+.network {
+  font-size: 4em;
+  border: 1px solid #d6d6d6;
+  padding: 30px 45px;
+  color: #ffffff;
+  z-index: -1 !important;
+  border-radius: 50%;
+}
+.network:hover {
+  background: #353535;
+  color: #e2dedb;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+  margin: -20 auto;
+  margin-top: 5%;
+  padding-top: 15px;
+  margin-bottom: 0;
+  font-family: 'Merienda', cursive;
+  color: #312f2f;
+}
+
+
+.arrow a {
+  font-size: 3em;
+  border: none;
+  color: #b9b3b3;
+}
+.arrow:hover i {
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 1.2em;
+  letter-spacing: 0.7em;
+  margin-bottom: 0;
+}
+
+
+
+@media (max-widht: 320px) {
+  .network {
+    font-size: 0.8em;
+    margin-left: -5%;
+    margin: 0;
+  }
+  .footer p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width:324px) and (max-width:600px){
+
+  footer{
+
+    margin-top: 0px;
+   
+  }
+
+.footer-icons{
+ 
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: 0;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.network {
+  font-size: 50px;
+  border: 1px solid #d6d6d6;
+  color: #ffffff;
+  z-index: -1 !important;
+  border-radius: 67%;
+}
+
+.twitter {
+
+  margin-bottom: 80px;
+}
+
+.facebook{
+
+  margin-bottom: 80px;
+}
+
+.instagram{
+
+  margin-bottom: 80px;
+}
+}
 
 
 
