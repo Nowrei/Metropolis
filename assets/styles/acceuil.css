@@ -24,8 +24,9 @@
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  padding: 18px 10px 10px 10px;
-  margin-left: 190px;
+  padding: 10px 40px;
+  font-family: 'Merienda', cursive;
+  color: white;
 }
 
 .nav > .nav-btn {
@@ -44,7 +45,8 @@
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: rgb(148, 142, 142);;
+  color: white;
+  font: 70px;
 }
 
 .nav > .nav-links > a:hover {
@@ -55,6 +57,130 @@
 .nav > #nav-check {
   display: none;
 }
+
+#container {
+  height: 500px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#mainView {
+ 
+  height: 684px;
+  width: 468px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  transition: all 1s;
+  margin-top: 245px;
+
+}
+#mainView:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+   
+}
+
+#leftView {
+  height: 500px;
+  width: 150px;
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: skewy(5deg);
+  transform-origin: top right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  margin-top: 285px;
+  
+}
+#leftView:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+#rightView {
+  height: 500px;
+  width: 150px;
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: skewy(-5deg);
+  transform-origin: top left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  margin-top: 285px;
+  
+}
+
+#rightView:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.navBtns {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  opacity: 0.8;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.navBtns:hover {
+  opacity: 1;
+  transition: all 1s;
+  
+}
+#navLeft {
+  left: 50px;
+}
+
+#navRight {
+  right: 50px;
+}
+
+#linkTag {
+ 
+  cursor: pointer;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media  screen and (min-width: 765px) and (max-width: 1024px){
 
@@ -74,6 +200,9 @@
   .nav > .nav-header > .nav-title {
     
     margin-left: 0px;
+    font-family: 'Merienda', cursive;
+    color: white;
+    padding: 10px 20px;
   }
   .nav > .nav-btn {
     display: inline-block;
@@ -102,7 +231,7 @@
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 35px;
     left: 0px;
   }
   .nav > .nav-links > a {
