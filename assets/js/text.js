@@ -6,7 +6,7 @@ let bg = document.getElementById("bg");
             window.addEventListener('scroll', function(){
                 var value = window.scrollY;
 
-                bg.style.top = value*0 + 'px';
+                bg.style.top = value*0.0 + 'px';
                 moon.style.left = -value*0.8 + 'px';
               
             })

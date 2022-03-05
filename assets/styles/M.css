@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+  background-color:#3d4042;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 900;
+}
+.nav {
+
+  width: 100%;
+  background: rgba(26, 24, 24, 0.74);
+  position: sticky;
+  z-index: 999;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px 40px;
+  font-family: 'Merienda', cursive;
+  color: white;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 14px;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color:white;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.background {
+
+    background-image: url("../img/m_le_maudit_3.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position-y: -100px;
+    
+}
+
+h1{
+
+    font-size:80px;
+    color: rgb(179, 165, 165);
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    justify-content: center;
+    padding: 240px;
+}
+
+.presentation{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+}
+
+.syno{
+
+    width: 35%;
+    height: 300px;
+    background-color: red;
+}
+
+.info{
+
+    width: 35%;
+    height: 300px;
+    background-color: rgb(61, 126, 109);
+
+}
+
+.acteur{
+
+    width: 35%;
+    height: 300px;
+    background-color: rgb(0, 26, 255);
+}
