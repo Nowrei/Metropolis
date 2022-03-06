@@ -39,83 +39,62 @@ button {
     display: inline;
   }
   
-  .nav > .nav-header > .nav-signup > input{
+  .nav > .nav-header > .nav-signup a{
     display: inline-block;
     font-size: 22px;
     padding: 10px 10px 10px 10px;
     margin-left: 70px;
-
     background-color: #343536;
     color: white;
     border: solid 1px #343536;
     border-radius: 2vh;
     margin-top: 10px;
-    
-  }
-
-  .nav > .nav-header > .nav-signup > input:hover{
-    display: inline-block;
-    font-size: 22px;
-    padding: 10px 10px 10px 10px;
-    margin-left: 70px;
-    background-color: #777272;
-    color: white;
-    border: solid 1px rgb(104, 101, 101);
-    border-radius: 2vh;
-    margin-top: 10px;
-    
-  }
-  
-  
-  .nav > .nav-signin {
-    display: inline;
-    float: right;
-    font-size: 14px;
-    margin-right: 50px;
-    margin-top: 15px;
-    border: solid 3px;
-    border-radius: 1vh;
-    background-color: #030d14;
-    appearance: none;
-  }
-
-  .nav > .nav-signin > input{
-    display: inline-block;
-    font-size: 22px;
-    padding: 10px 10px 10px 10px;
-    background-color: #343536;
-    color: white;
-    border: solid 1px #343536;
-    border-radius: 2vh;
-    margin-top: -5px;
-}
-    
-  
-
-  .nav > .nav-signin > input:hover{
-
-    display: inline-block;
-    font-size: 22px;
-    padding: 10px 10px 10px 10px;
-    background-color: #777272;
-    color: white;
-    border: solid 1px rgb(104, 101, 101);
-    border-radius: 2vh;
-    margin-top: -5px;
-  }
-  
-  .nav > .nav-signin > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: rgb(148, 142, 142);
+    
+  }
+
+  .nav > .nav-header > .nav-signup a:hover{
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 70px;
+    background-color: #777272;
+    color: white;
+    border: solid 1px rgb(104, 101, 101);
+    border-radius: 2vh;
+    margin-top: 10px;
+    
   }
   
-  .nav > .nav-signin > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    color:white;
-  }
   
+  .nav > .nav-signin a{
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 70px;
+    background-color: #343536;
+    color: white;
+    border: solid 1px #343536;
+    border-radius: 2vh;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+    
+  
+
+  .nav > .nav-signin a:hover{
+
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    background-color: #777272;
+    color: white;
+    border: solid 1px rgb(104, 101, 101);
+    border-radius: 2vh;
+
+  }
+    
   .nav > #nav-check {
     display: none;
   }

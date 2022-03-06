@@ -80,6 +80,8 @@ h1{
     padding: 240px;
 }
 
+h2{ font-family: 'Merienda', cursive;}
+
 .presentation{
 
     display: flex;
@@ -90,31 +92,313 @@ h1{
     font-size: 30px;
 }
 
+.syno h2 {
+
+  text-align: center;
+}
 .syno{
 
     width: 35%;
-    height: 300px;
+    height: 430px;
     padding: 20px 20px;
     text-align: center;
     background-color: rgb(219, 216, 216);
-    font-size: 3  0px;
+    font-size: 30px;
 }
 
+
+.info h2 {
+
+  font-size: 50px;
+  text-align: center;
+}
 .info{
 
     width: 35%;
-    height: 300px;
+    height: 450px;
     background-color: rgb(48, 48, 49);
     padding: 10px 10px;
     color: white;
-
+    font-size: 30px;
+    
 }
 
 .acteur{
 
     width: 35%;
-    height: 300px;
+    height: 450px;
     background-color: rgb(48, 48, 49);
     padding: 10px 10px;
     color: white;
+    font-size: 30px;
+}
+
+.acteur h2 {
+
+  font-size: 50px;
+  text-align: center;
+}
+
+.video-wrapper {
+  
+  margin-top: 3vw;
+  overflow:hidden;
+  position:relative;
+  height:600px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+
+  height:500px;
+  width:60%;
+  position:center;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 160px 50px 5 50px;
+  height: 18%;
+  background: rgba(26, 24, 24, 0.74);
+ padding-top: 30px;
+
+}
+
+footer p {
+
+  font-family: 'Merienda', cursive;
+  color:white
+}
+
+footer h3 {
+  padding: 15px 0 60px 0;
+  font-size: 2.5em;
+  color: white;
+  font-family: 'Merienda', cursive;
+}
+
+.footer-icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: 0;
+  color: white;
+}
+.network {
+  font-size: 4em;
+  border: 1px solid #d6d6d6;
+  padding: 30px 45px;
+  color: #ffffff;
+  z-index: 1;
+  border-radius: 50%;
+}
+.network:hover {
+  background: #353535;
+  color: #e2dedb;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+  margin: -20 auto;
+  margin-top: 5%;
+  padding-top: 15px;
+  margin-bottom: 0;
+  font-family: 'Merienda', cursive;
+  color: #312f2f;
+}
+
+
+.arrow a {
+  font-size: 3em;
+  border: none;
+  color: #b9b3b3;
+}
+.arrow:hover i {
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 1.2em;
+  letter-spacing: 0.7em;
+  margin-bottom: 0;
+}
+
+@media  screen and (min-width: 320px) and (max-width: 764px){
+ 
+  .nav > .nav-header > .nav-title {
+    
+    margin-left: 0px;
+    font-family: 'Merienda', cursive;
+    color: white;
+    padding: 10px 20px;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    padding: 17px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 35px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+   
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(20vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+
+  .presentation{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+}
+
+.info{
+
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.syno{
+
+  width:100%;
+  padding: 0px 0px;
+ 
+}
+}
+
+.acteur {
+
+  width:100%;
+  padding: 0px 0px;
+}
+
+
+
+
+@media screen and (min-width:324px) and (max-width:599px){
+
+  .background {
+
+    height: 400px;
+    background-size: cover;
+    padding: 0px 0px;
+  }
+
+  .background h1{
+
+    padding: 100px 0px;
+    font-size: 50px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .presentation{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+}
+
+.info{
+
+  width:100%;
+  padding: 0px 0px;
+}
+
+.syno{
+
+  width:100%;
+  padding: 0px 0px;
+  text-align: left
+}
+
+.acteur {
+
+  width: 100%;
+  padding: 0px 0px;
+}
+
+  footer{
+
+    margin-top: 0px;
+    padding: 0px 0px;
+   
+  }
+
+.footer-icons{
+ 
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: 0;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.network {
+  font-size: 50px;
+  border: 1px solid #d6d6d6;
+  color: #ffffff;
+  z-index: -1 !important;
+  border-radius: 67%;
+}
+
+.twitter {
+
+  margin-bottom: 80px;
+}
+
+.facebook{
+
+  margin-bottom: 80px;
+}
+
+.instagram{
+
+  margin-bottom: 80px;
+}
 }
