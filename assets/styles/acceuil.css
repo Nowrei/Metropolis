@@ -220,7 +220,7 @@ body .owl-carousel .owl-nav.disabled {
   padding: 20px 20px;
   font-family: 'Merienda', cursive;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .allemand hr {
@@ -270,7 +270,7 @@ background-position-x: 0px;
     padding: 20px 20px;
     font-family: 'Merienda', cursive;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
   }
   
   .burlesque hr {
@@ -377,7 +377,7 @@ background-position-x: 0px;
   padding: 20px 20px;
   font-family: 'Merienda', cursive;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .spaghetti hr {
@@ -448,8 +448,8 @@ display: none;
 
 .spaghetti .item1{
 
-background-image: url("../img/safety-last-11.jpg");
-background-position-y: -7px;
+background-image: url("../img/dollar.jpg");
+background-position-y: 0x;
 background-position-x: 0px;
 }
 
@@ -457,26 +457,26 @@ background-position-x: 0px;
 
 .spaghetti .item2{
 
-background-image: url('../img/557441.jpg');
-background-position-y: -9px;
-background-position-x: -18px;
+background-image: url('../img/et-pour-quelques-dollars-de-plus-vt.jpg');
+background-position-y: 0px;
+background-position-x: 0px;
 }
 
 .spaghetti .item3{
 
-background-image: url('../img/L_Operateur\ \(1\).jpg');
-background-position-y: -18px;
-background-position-x: -9px;
+background-image: url('../img/bon.jpg');
+background-position-y: 0px;
+background-position-x: 0px;
 }
-.spaghetti .item4{background-image: url('../img/Welcome_Danger_poster.jpg');
-background-position-y: -14px;
-background-position-x: 3px;;}
+.spaghetti .item4{background-image: url('../img/ouest.jpg');
+background-position-y: 0px;
+background-position-x: 0px;;}
 
 .spaghetti .item5{
 
-background-image:url('../img/The_Kid_Brother_poster.jpg');
-background-position-y: -35px;
-background-position-x: -10px;
+background-image:url('../img/révolution.jpg');
+background-position-y: 0px;
+background-position-x: 0px;
 } 
 
 .français h2 {
@@ -484,7 +484,7 @@ background-position-x: -10px;
   padding: 20px 20px;
   font-family: 'Merienda', cursive;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .français hr {
@@ -672,6 +672,62 @@ footer p {
 }
 
 @media screen and (min-width:324px) and (max-width:600px){
+
+
+  #container {
+
+    display: none;
+  }
+
+  .allemand .framebox {
+
+    margin-top: 10px;
+  }
+
+  .allemand a.item {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 78px 30px;
+    width: 245px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.burlesque a.item {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 78px 30px;
+  width: 245px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.spaghetti a.item {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 78px 30px;
+  width: 245px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.français a.item {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 78px 30px;
+  width: 245px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
   footer{
 

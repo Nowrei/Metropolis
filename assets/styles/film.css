@@ -64,18 +64,16 @@ body {
 
 .background {
 
-    background-image: url("../img/m_le_maudit_3.jpg");
+    background-image: url("../img/M_le_maudit.jpg");
     width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-position-y: -100px;
-    
+    height: 700px;
+    background-size: cover;  
 }
 
 h1{
 
     font-size:80px;
-    color: rgb(179, 165, 165);
+    color: rgb(255, 255, 255);
     font-family: 'Merienda', cursive;
     text-align: center;
     justify-content: center;
@@ -96,14 +94,19 @@ h1{
 
     width: 35%;
     height: 300px;
-    background-color: red;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: rgb(219, 216, 216);
+    font-size: 3  0px;
 }
 
 .info{
 
     width: 35%;
     height: 300px;
-    background-color: rgb(61, 126, 109);
+    background-color: rgb(48, 48, 49);
+    padding: 10px 10px;
+    color: white;
 
 }
 
@@ -111,5 +114,7 @@ h1{
 
     width: 35%;
     height: 300px;
-    background-color: rgb(0, 26, 255);
+    background-color: rgb(48, 48, 49);
+    padding: 10px 10px;
+    color: white;
 }
