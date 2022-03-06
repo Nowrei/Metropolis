@@ -238,6 +238,12 @@ background-position-y: -5px;
 background-position-x: 0px;
 }
 
+.item:hover {
+  transform: scale(1.5);
+  transition: all 300ms ease-in-out;
+  transition-delay: 200ms;
+  z-index: 1;
+}
 
 
 .allemand .item2{

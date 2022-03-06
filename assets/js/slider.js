@@ -13,7 +13,8 @@ jQuery(document).ready(function($) {
         navText: ["<i class='fa arrow-circle-left'><</i>","<i class='fa arrow-right'>></i>"],
         responsive:{
           0:{
-              items:1
+              items:2,
+              
           },
           600:{
               items:3
@@ -26,4 +27,7 @@ jQuery(document).ready(function($) {
     $(document).on('click', '.item', function() {
       $owl.trigger('to.owl.carousel', $(this).data( 'position' ) ); 
     });
+    
           });
+
+          
