@@ -29,6 +29,7 @@
               </label>
             </div>
             
+            
             <div class="nav-links">
               <a href="acceuil.php" >Acceuil</a>
               <a href="#" >Films</a>
@@ -59,7 +60,7 @@
             
             </div>
             <div class="syno"><h2>Synopsis</h2><br>
-              Toute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
+              <span>T</span>oute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
             <div class="acteur"><h2>Acteurs</h2><br>
               Peter Lorre : Hans Beckert<br>
               Ellen Widmann : Frau Beckman<br>
@@ -73,8 +74,8 @@
         <div class="video-wrapper">
           <iframe width="600" height="500" src="https://www.youtube.com/embed/ssdtn60srNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <footer>
-            <h3>Contact</h3>
+<footer>
+  <h3>Contact</h3>
             <div class="footer-icons">
                 
                 <div class="twitter">
@@ -104,5 +105,5 @@
                 </a>
             </div>
             <p>Metropolis - copyright © 2022</p>
-        </footer>
+</footer>
 </body>

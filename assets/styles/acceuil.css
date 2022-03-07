@@ -16,7 +16,7 @@ body {
 .nav {
 
   width: 100%;
-  background: rgba(26, 24, 24, 0.74);
+  background: rgb(51, 48, 48);
   position: sticky;
   z-index: 999;
 }
@@ -685,23 +685,23 @@ margin-bottom: 80px;
   .nav > .nav-btn > label {
     display: inline-block;
     padding: 17px;
-    background: rgba(26, 24, 24, 0.74);
+    background: rgb(51, 48, 48);
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background: rgba(26, 24, 24, 0.74);
+    background: rgb(51, 48, 48);
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 3px;
     border-top: 2px solid #eee;
-    background: rgba(26, 24, 24, 0.74);
+    background: rgb(51, 48, 48);
   }
   .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    background: rgba(26, 24, 24, 0.74);
+    background: rgb(51, 48, 48);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -714,14 +714,14 @@ margin-bottom: 80px;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
-    background: rgba(26, 24, 24, 0.74);
+    background: rgb(51, 48, 48);
   }
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(30vh - 50px);
     overflow-y: auto;
-    background: rgba(26, 24, 24, 0.74); 
+    background: rgb(51, 48, 48); 
   }
   #nav-check {
-    background: rgba(26, 24, 24, 0.74);
+    background: rgb(51, 48, 48);
   }
 }
