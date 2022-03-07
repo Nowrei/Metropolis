@@ -17,7 +17,7 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
               <div class="nav-signup">
-                <a href="inscrire.php">S'inycrire</a>
+                <a href="inscrire.php">S'inscrire</a>
               </div>
             </div>
 
