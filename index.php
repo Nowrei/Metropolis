@@ -17,13 +17,13 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
               <div class="nav-signup">
-                <a href="S'incrire.html">S'incrire</a>
+                <a href="inscrire.php">S'incrire</a>
               </div>
             </div>
 
             
             <div class="nav-signin">
-                <a href="connexion.html">Connexion</a>
+                <a href="connexion.php">Connexion</a>
     
             </div>
           </div>

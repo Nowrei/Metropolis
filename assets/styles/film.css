@@ -157,16 +157,6 @@ h2{ font-family: 'Merienda', cursive;}
   position:center;
 }
 
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 160px 50px 5 50px;
-  height: 18%;
-  background: rgba(26, 24, 24, 0.74);
- padding-top: 30px;
-
-}
-
 footer p {
 
   font-family: 'Merienda', cursive;
@@ -362,6 +352,24 @@ footer p {
 
   width: 100%;
   padding: 0px 0px;
+}
+
+.video-wrapper {
+  
+  margin-top: 3vw;
+  overflow:hidden;
+  position:relative;
+  height:600px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+
+  height:500px;
+  width:60%;
+  position:center;
 }
 
   footer{
