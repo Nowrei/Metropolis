@@ -25,13 +25,20 @@ body {
   display: inline;
 }
 
-.nav > .nav-header > .nav-title a{
+.nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
   padding: 10px 40px;
   font-family: 'Merienda', cursive;
   color: white;
   text-decoration: none;
+  
+}
+
+.nav > .nav-header > .nav-title a{
+
+  text-decoration: none;
+  color: white;
 }
 
 .nav > .nav-btn {
@@ -52,6 +59,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 20px;
+ 
 }
 
 .nav > .nav-links > a:hover {
