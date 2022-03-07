@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film</title>
+    <title>Metropolis</title>
     <link rel="stylesheet" href="assets/styles/film.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
 </head>
 <body>
     <nav class="sticky">
@@ -60,7 +59,7 @@
             
             </div>
             <div class="syno"><h2>Synopsis</h2><br>
-              <span>Toute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
+              <span>T</span>oute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
             <div class="acteur"><h2>Acteurs</h2><br>
               Peter Lorre : Hans Beckert<br>
               Ellen Widmann : Frau Beckman<br>
