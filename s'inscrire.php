@@ -14,9 +14,16 @@
 </head>
 
 <body>
-   
-    <form action="acceuil.html">
+    <div class="arriere">
+    <form action="">
         <div class="form-control">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom">
+        </div>
+        <div class="form-control">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom">
+        </div>
         <div class="form-control">
             <label for="useremail">Email</label>
             <input type="email" id="useremail" name="useremail">
@@ -26,9 +33,17 @@
             <input type="password" id="userpassword1" name="userpassword1">
         </div>
         <div class="form-control">
-            <button type="submit">Connexion</button>
+            <label for="userpassword2">Confirmer mot de passe</label>
+            <input type="password" id="userpassword2" name="userpassword2">
+        </div>
+        <div class="form-control">
+            <button type="submit">S'inscrire</button>
+        </div>
+        <div id="errors">
+            <ul></ul>
         </div>
     </form>
-   
-   
+    </div>
+    <script src="assets/js/connexion.js">
+    </script>
 </body>

@@ -15,7 +15,7 @@
 
 <body>
    
-    <form action="acceuil.html">
+    <form action="acceuil.php">
         <div class="form-control">
         <div class="form-control">
             <label for="useremail">Email</label>
