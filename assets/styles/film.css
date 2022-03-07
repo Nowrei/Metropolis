@@ -157,67 +157,77 @@ h2{ font-family: 'Merienda', cursive;}
   position:center;
 }
 
-footer p {
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 160px 50px 5 50px;
+    height: 18%;
+    background: rgba(26, 24, 24, 0.74);
+  padding-top: 30px;
 
-  font-family: 'Merienda', cursive;
-  color:white
-}
+  }
 
-footer h3 {
-  padding: 15px 0 60px 0;
-  font-size: 2.5em;
-  color: white;
-  font-family: 'Merienda', cursive;
-}
+  footer p {
 
-.footer-icons {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  max-width: 60%;
-  margin-top: 0;
-  color: white;
-}
-.network {
-  font-size: 4em;
-  border: 1px solid #d6d6d6;
-  padding: 30px 45px;
-  color: #ffffff;
-  z-index: 1;
-  border-radius: 50%;
-}
-.network:hover {
-  background: #353535;
-  color: #e2dedb;
-  transition: all 0.3s ease-in-out;
-}
+    font-family: 'Merienda', cursive;
+    color:white
+  }
 
-.arrow {
-  margin: -20 auto;
-  margin-top: 5%;
-  padding-top: 15px;
-  margin-bottom: 0;
-  font-family: 'Merienda', cursive;
-  color: #312f2f;
-}
+  footer h3 {
+    padding: 15px 0 60px 0;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Merienda', cursive;
+  }
+
+  .footer-icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin-top: 0;
+    color: white;
+  }
+  .network {
+    font-size: 4em;
+    border: 1px solid #d6d6d6;
+    padding: 30px 45px;
+    color: #ffffff;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .network:hover {
+    background: #353535;
+    color: #e2dedb;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .arrow {
+    margin: -20 auto;
+    margin-top: 5%;
+    padding-top: 15px;
+    margin-bottom: 0;
+    font-family: 'Merienda', cursive;
+    color: #312f2f;
+  }
 
 
-.arrow a {
-  font-size: 3em;
-  border: none;
-  color: #b9b3b3;
-}
-.arrow:hover i {
-  transform: scale(1.6);
-  transition: 0.5s ease-in-out;
-  color: #ffffff;
-}
+  .arrow a {
+    font-size: 3em;
+    border: none;
+    color: #b9b3b3;
+  }
+  .arrow:hover i {
+    transform: scale(1.6);
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
+  }
 
-footer p {
-  font-size: 1.2em;
-  letter-spacing: 0.7em;
-  margin-bottom: 0;
-}
+  footer p {
+    font-size: 1.2em;
+    letter-spacing: 0.7em;
+    margin-bottom: 0;
+  }
 
 @media  screen and (min-width: 320px) and (max-width: 764px){
  
@@ -367,10 +377,11 @@ footer p {
 
 .video-wrapper iframe {
 
-  height:500px;
-  width:60%;
+  height:300px;
+  width:90%;
   position:center;
 }
+
 
   footer{
 
