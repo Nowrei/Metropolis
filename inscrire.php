@@ -15,7 +15,7 @@
 <body>
 <a href="index.php" class ="Buttonretc">Précédent</a>
     
-    <form action="">
+    <form action="acceuil.php">
         <div class="form-control">
             <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom">
