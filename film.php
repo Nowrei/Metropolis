@@ -60,7 +60,7 @@
             
             </div>
             <div class="syno"><h2>Synopsis</h2><br>
-              <span>T</span>oute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
+              <span>Toute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
             <div class="acteur"><h2>Acteurs</h2><br>
               Peter Lorre : Hans Beckert<br>
               Ellen Widmann : Frau Beckman<br>
@@ -86,7 +86,7 @@
     
                 <div class="facebook">
                     <a href="http://facebook.fr" class="network">
-                        <i class="fa fa-facebook"></i>
+                    <i class="fa fa-facebook"></i>
                     </a>
                 </div>
     
