@@ -99,7 +99,7 @@ h2{ font-family: 'Merienda', cursive;}
 .syno{
 
     width: 35%;
-    height: 430px;
+    height: 530px;
     padding: 20px 20px;
     text-align: center;
     background-color: rgb(219, 216, 216);
@@ -112,10 +112,11 @@ h2{ font-family: 'Merienda', cursive;}
   font-size: 50px;
   text-align: center;
 }
+
 .info{
 
     width: 35%;
-    height: 450px;
+    height: 550px;
     background-color: rgb(48, 48, 49);
     padding: 10px 10px;
     color: white;
@@ -126,7 +127,7 @@ h2{ font-family: 'Merienda', cursive;}
 .acteur{
 
     width: 35%;
-    height: 450px;
+    height: 550px;
     background-color: rgb(48, 48, 49);
     padding: 10px 10px;
     color: white;
@@ -180,6 +181,11 @@ h2{ font-family: 'Merienda', cursive;}
     font-family: 'Merienda', cursive;
   }
 
+  .icons {
+
+    z-index: 3;
+    color: white;
+  }
   .footer-icons {
     margin: 0 auto;
     display: flex;
@@ -347,21 +353,21 @@ h2{ font-family: 'Merienda', cursive;}
 .info{
 
   width:100%;
-  padding: 0px 0px;
+  padding: 10px 10px;
 }
 
 .syno{
 
   width:100%;
-  padding: 0px 0px;
+  padding: 10px 10px;
   text-align: left;
-  height: 500px;
+  height: 600px;
 }
 
 .acteur {
 
   width: 100%;
-  padding: 0px 0px;
+  padding: 10px 10px;
 }
 
 .video-wrapper {

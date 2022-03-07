@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   
+<a href="index.php" class ="Buttonretc">Précédent</a>
     <form action="acceuil.php">
         <div class="form-control">
         <div class="form-control">

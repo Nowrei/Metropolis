@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
 </head>
-
 <body>
-    <div class="arriere">
+<a href="index.php" class ="Buttonretc">Précédent</a>
+    
     <form action="">
         <div class="form-control">
             <label for="nom">Nom</label>
@@ -43,7 +43,7 @@
             <ul></ul>
         </div>
     </form>
-    </div>
+    
     <script src="assets/js/connexion.js">
     </script>
 </body>
