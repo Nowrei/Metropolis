@@ -18,7 +18,7 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
               <div class="nav-title">
-                Metropolis
+              <a href="index.php"> Metropolis </a>
               </div>
             </div>
             <div class="nav-btn">

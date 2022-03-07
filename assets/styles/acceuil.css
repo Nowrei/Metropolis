@@ -25,12 +25,13 @@ body {
   display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+.nav > .nav-header > .nav-title a{
   display: inline-block;
   font-size: 22px;
   padding: 10px 40px;
   font-family: 'Merienda', cursive;
   color: white;
+  text-decoration: none;
 }
 
 .nav > .nav-btn {
