@@ -8,10 +8,10 @@
         $email = htmlspecialchars($_POST['email']); 
         $password = htmlspecialchars($_POST['password']);
         
-        $email = strtolower($email); 
         
         
-        $check = $bdd->prepare('SELECT  mail, mdp FROM client WHERE mail = ?');
+        
+        $check = $bdd->prepare('SELECT * FROM client ');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
@@ -25,11 +25,11 @@
             if(filter_var($email, FILTER_VALIDATE_EMAIL))
             {
                 $password = hash ('sha256', $password);
-                if ($data['mdp'] ==$password)
+                if ($data['mdp_client'] ==$password)
                 {
                     
-                    $_SESSION['user'] = $data['token'];
-                    header('Location: connexion.php');
+                    $_SESSION['submit'] = $data['password'];
+                    header('Location: acceuil.php');
                     
                 }else{ header('Location: connexion.php?login_err=password'); die(); }
             }else{ header('Location: connexion.php?login_err=email'); die(); }

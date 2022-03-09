@@ -15,18 +15,17 @@
 
 <body>
 <a href="index.php" class ="Buttonretc">Précédent</a>
-    <form action="traitementco.php">
+    <form action="a.php">
         <div class="form-control">
-        <div class="form-control">
-            <label for="useremail">Email</label>
-            <input type="email" id="email" name="useremail">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
         </div>
         <div class="form-control">
             <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" required>
         </div>
         <div class="form-control">
-            <button type="submit">Connexion</button>
+            <button type="submit" name="submit">Connexion</button>
         </div>
     </form>
    
