@@ -15,15 +15,15 @@
 
 <body>
 <a href="index.php" class ="Buttonretc">Précédent</a>
-    <form action="acceuil.php">
+    <form action="traitementco.php">
         <div class="form-control">
         <div class="form-control">
             <label for="useremail">Email</label>
-            <input type="email" id="useremail" name="useremail">
+            <input type="email" id="email" name="useremail">
         </div>
         <div class="form-control">
-            <label for="userpassword1">Mot de passe</label>
-            <input type="password" id="userpassword1" name="userpassword1">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password">
         </div>
         <div class="form-control">
             <button type="submit">Connexion</button>
