@@ -14,8 +14,8 @@
 </head>
 <body>
 <a href="index.php" class ="Buttonretc">Précédent</a>
-    
-    <form action="acceuil.php">
+<div class=login-form>
+    <form action="traitementinscri.php" method="post">
         <div class="form-control">
             <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom">
@@ -25,16 +25,16 @@
             <input type="text" id="prenom" name="prenom">
         </div>
         <div class="form-control">
-            <label for="useremail">Email</label>
-            <input type="email" id="useremail" name="useremail">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
         </div>
         <div class="form-control">
-            <label for="userpassword1">Mot de passe</label>
-            <input type="password" id="userpassword1" name="userpassword1">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password">
         </div>
         <div class="form-control">
-            <label for="userpassword2">Confirmer mot de passe</label>
-            <input type="password" id="userpassword2" name="userpassword2">
+            <label for="confirmpassword">Confirmer mot de passe</label>
+            <input type="confirmpassword" id="confirmpassword" name="confirmpassword">
         </div>
         <div class="form-control">
             <button type="submit">S'inscrire</button>
@@ -43,6 +43,7 @@
             <ul></ul>
         </div>
     </form>
+</div>
     
     <script src="assets/js/connexion.js">
     </script>

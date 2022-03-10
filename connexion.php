@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inscrire</title>
+    <title>Connexion</title>
     <link rel="stylesheet" href="assets/styles/s'inscrire.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +16,23 @@
 
 <body>
 <a href="index.php" class ="Buttonretc">Précédent</a>
-    <form action="a.php">
+
+<div class=login-form>
+    <form action="traitementco.php" method="post">
         <div class="form-control">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" >
         </div>
         <div class="form-control">
             <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" >
         </div>
         <div class="form-control">
             <button type="submit" name="submit">Connexion</button>
+            <span class="loginMsg"><?php echo @$msg;?></span>
         </div>
     </form>
+</div>
    
    
 </body>
