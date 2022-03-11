@@ -1,3 +1,6 @@
+<?php session_start();
+include('config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  </head>
 <body>
     <nav class="sticky">
         <div class="nav">
@@ -38,9 +41,15 @@
             </div>
           </div>
         </nav>
+        <?php 
+$sql = "SELECT * FROM film WHERE id_film=".$_GET["id_film"]."";
+$requete=$bdd->prepare($sql);
+$requete->execute();
+$affiche = $requete->fetch(); 
 
+?>  
         <div class="background">
-            <h1>M le maudit</h1>
+            <h1><?php echo $affiche["nom_film"]; ?></h1>
         </div>
 
         <div class="presentation">

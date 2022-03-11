@@ -1,3 +1,6 @@
+<?php session_start();
+include('config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +35,7 @@
             <div class="nav-links">
               <a href="#" >Acceuil</a>
               <a href="#" >Films</a>
-              <a href="#" >Ma liste</a>
+              <a href="logout.php" >Déconnexion</a>
               
     
             </div>
@@ -57,7 +60,7 @@
           <h2>Expressionime Allemand</h2>
           <hr>
           <div class="owl-carousel">
-         <a class="item item1" href="film.php"></a>
+         <a class="item item1" href="film.php?id_film=1<?php echo ['id_film = 1'];?>"></a>
          <a class="item item2" href="film.php"></a>
          <a class="item item3" href="film.php"></a>
          <a class="item item4" href="film.php"></a>

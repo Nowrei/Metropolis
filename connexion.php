@@ -29,7 +29,7 @@
         </div>
         <div class="form-control">
             <button type="submit" name="submit">Connexion</button>
-            <span class="loginMsg"><?php echo @$msg;?></span>
+            <p>Pas encore de compte? <a href="inscrire.php">Inscris-toi ici</a></p>
         </div>
     </form>
 </div>
