@@ -3,7 +3,7 @@
 $user="root";
 $pass="";
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=metropolis', $user, $pass);
+    $bdd = new PDO('mysql:host=localhost;dbname=metropolis;charset=utf8;port=3306', $user, $pass);
    
     
     $dbh = null;

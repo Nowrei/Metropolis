@@ -36,6 +36,7 @@ include('config.php'); ?>
               <a href="acceuil.php" >Acceuil</a>
               <a href="#" >Films</a>
               <a href="#" >Ma liste</a>
+              <a href="logout.php" >Déconnexion</a>
               
     
             </div>
@@ -47,40 +48,58 @@ $requete=$bdd->prepare($sql);
 $requete->execute();
 $affiche = $requete->fetch(); 
 
+$sql2 = "SELECT * FROM `joue` j,film f, acteur a WHERE j.id_acteur=a.id_acteur AND j.id_film=f.id_film AND f.id_film=".$_GET["id_film"]."";
+$requete2=$bdd->prepare($sql2);
+$requete2->execute();
+$affiche2 = $requete2->fetchAll();
+
+$sql3 = "SELECT * FROM `avoir` a, film f, realisteur r WHERE a.id_realisteur=r.id_realisteur AND a.id_film=f.id_film AND f.id_film=".$_GET["id_film"]."";
+$requete3=$bdd->prepare($sql3);
+$requete3->execute();
+$affiche3 = $requete3->fetchAll();
+
+
 ?>  
         <div class="background">
-            <h1><?php echo $affiche["nom_film"]; ?></h1>
+        <h1><?php echo $affiche["nom_film"]; ?></h1>
+          <img src="<?php echo $affiche["affiche_film"]; ?>">  
+
         </div>
 
         <div class="presentation">
             <div class="info"><h2>Information</h2><br>
-              Titre original: M <br>
-              Durée : 1h57 min <br>
-              Réalisateur : Fritz Lang <br>
-              Pays d'origine : Allemagne<br>
-              Genre : Policier, Drame, Thriller<br>
-              Année de production: 1931<br>
-              Date de sortie française: 8 Avril 1932<br>
-              Date de sortie dans le pays d'origine: 11 Mai 1931<br>
+              Titre original: <?php echo $affiche["nom_film"]; ?><br>
+              Durée : <?php echo $affiche["duree_film"]; ?><br>
+              Réalisateur : 
+              <?php foreach ($affiche3 as $affiche33)
+             {
+
+             echo $affiche33["nom_realisateur"];
+           }
+           ?>
+           <br>
+              Pays d'origine :<?php echo $affiche["pays_film"]; ?><br>
+              Genre : <?php echo $affiche["genre_film"] ?><br>
+              Date de sortie: <?php echo $affiche["date_film"]; ?><br>
               
             
             
             
             </div>
             <div class="syno"><h2>Synopsis</h2><br>
-              <span>T</span>oute la presse ne parle que de ça : le maniaque tueur d'enfants, qui terrorise la ville depuis quelques temps, vient de faire une nouvelle victime. Chargé de l'enquête, le commissaire Lohmann multiplie les rafles dans les bas-fonds. Gênée par toute cette agitation la pègre décide de retrouver elle-même le criminel : elle charge les mendiants et les sans-abris de surveiller la ville.  </div>
+              <?php echo $affiche["synopsis_film"]; ?>  </div>
             <div class="acteur"><h2>Acteurs</h2><br>
-              Peter Lorre : Hans Beckert<br>
-              Ellen Widmann : Frau Beckman<br>
-              Inge Landgut : Elsie Beckmann<br>
-              Ottie Wernicke : Inspecteur Karl Lohmann<br>
-              Theodor Loos : Inspecteur Groaber<br>
-              Gustaf Gründgens : Schränker<br>
+            <?php foreach ($affiche2 as $affiche22)
+             {
+
+             echo $affiche22["nom_acteur"];
+           }
+           ?>
             </div>
         </div>
 
         <div class="video-wrapper">
-          <iframe width="600" height="500" src="https://www.youtube.com/embed/ssdtn60srNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="600" height="500" src="<?php echo$affiche["annonce_film"]; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 <footer>
   <h3>Contact</h3>
