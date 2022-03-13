@@ -62,14 +62,18 @@ $affiche3 = $requete3->fetchAll();
 ?>  
         <div class="background">
         <h1><?php echo $affiche["nom_film"]; ?></h1>
-          <img src="<?php echo $affiche["affiche_film"]; ?>">  
-
+          <style>
+            .background {
+              background: url(<?php echo $affiche["affiche_film"]; ?>);
+              background-size:cover;
+            }
+          </style>
         </div>
 
         <div class="presentation">
             <div class="info"><h2>Information</h2><br>
-              Titre original: <?php echo $affiche["nom_film"]; ?><br>
-              Durée : <?php echo $affiche["duree_film"]; ?><br>
+              Titre original:  <?php echo $affiche["nom_film"]; ?><br>
+              Durée :  <?php echo $affiche["duree_film"]; ?><br>
               Réalisateur : 
               <?php foreach ($affiche3 as $affiche33)
              {
@@ -78,7 +82,7 @@ $affiche3 = $requete3->fetchAll();
            }
            ?>
            <br>
-              Pays d'origine :<?php echo $affiche["pays_film"]; ?><br>
+              Pays d'origine : <?php echo $affiche["pays_film"]; ?><br>
               Genre : <?php echo $affiche["genre_film"] ?><br>
               Date de sortie: <?php echo $affiche["date_film"]; ?><br>
               

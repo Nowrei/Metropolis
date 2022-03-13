@@ -72,10 +72,9 @@ body {
 
 .background {
 
-    /*background-image: url("../img/M_le_maudit.jpg");*/
     width: 100%;
     height: 700px;
-    background-size: cover;  
+    
 }
 
 h1{

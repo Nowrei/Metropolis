@@ -62,9 +62,9 @@ include('config.php'); ?>
           <div class="owl-carousel">
          <a class="item item1" href="film.php?id_film=1"></a>
          <a class="item item2" href="film.php?id_film=2"></a>
-         <a class="item item3" href="film.php"></a>
-         <a class="item item4" href="film.php"></a>
-         <a class="item item5" href="film.php"></a>
+         <a class="item item3" href="film.php?id_film=3"></a>
+         <a class="item item4" href="film.php?id_film=4"></a>
+         <a class="item item5" href="film.php?id_film=5"></a>
      </div>
      </div>
 </div>
@@ -76,11 +76,11 @@ include('config.php'); ?>
         <h2>Burlesque des années 20</h2>
         <hr>
         <div class="owl-carousel">
-       <a class="item item1" href="film.php"></a>
-       <a class="item item2" href="film.php"></a>
-       <a class="item item3" href="film.php"></a>
-       <a class="item item4" href="film.php"></a>
-       <a class="item item5" href="film.php"></a>
+       <a class="item item1" href="film.php?id_film=6"></a>
+       <a class="item item2" href="film.php?id_film=7"></a>
+       <a class="item item3" href="film.php?id_film=8"></a>
+       <a class="item item4" href="film.php?id_film=9"></a>
+       <a class="item item5" href="film.php?id_film=10"></a>
    </div>
    </div>
    </div>
@@ -91,11 +91,11 @@ include('config.php'); ?>
       <h2>Western</h2>
       <hr>
       <div class="owl-carousel">
-     <a class="item item1" href="film.php"></a>
-     <a class="item item2" href="film.php"></a>
-     <a class="item item3" href="film.php"></a>
-     <a class="item item4" href="film.php"></a>
-     <a class="item item5" href="film.php"></a>
+     <a class="item item1" href="film.php?id_film=11"></a>
+     <a class="item item2" href="film.php?id_film=12"></a>
+     <a class="item item3" href="film.php?id_film=13"></a>
+     <a class="item item4" href="film.php?id_film=14"></a>
+     <a class="item item5" href="film.php?id_film=15"></a>
  </div>
  </div>
  </div>
@@ -106,11 +106,11 @@ include('config.php'); ?>
     <h2>Cinéma français</h2>
     <hr>
     <div class="owl-carousel">
-   <a class="item item1" href="film.php"></a>
-   <a class="item item2" href="film.php"></a>
-   <a class="item item3" href="film.php"></a>
-   <a class="item item4" href="film.php"></a>
-   <a class="item item5" href="film.php"></a>
+   <a class="item item1" href="film.php?id_film=16"></a>
+   <a class="item item2" href="film.php?id_film=17"></a>
+   <a class="item item3" href="film.php?id_film=18"></a>
+   <a class="item item4" href="film.php?id_film=19"></a>
+   <a class="item item5" href="film.php?id_film=20"></a>
 </div>
 </div>
 </div>
