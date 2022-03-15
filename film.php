@@ -9,39 +9,19 @@ include('config.php'); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis</title>
     <link rel="stylesheet" href="assets/styles/film.css">
+    <link rel="stylesheet" href="assets/styles/navbarre.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 <body>
-    <nav class="sticky">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-              <a href="index.php"> Metropolis </a>
-              </div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            
-            <div class="nav-links">
-              <a href="acceuil.php" >Acceuil</a>
-              <a href="#" >Films</a>
-              <a href="#" >Ma liste</a>
-              <a href="logout.php" >Déconnexion</a>
-              
-    
-            </div>
-          </div>
-        </nav>
+
+
+<?php include("assets/include/navbarre.php") ?>
+
+
         <?php 
 $sql = "SELECT * FROM film WHERE id_film=".$_GET["id_film"]."";
 $requete=$bdd->prepare($sql);
@@ -105,36 +85,7 @@ $affiche3 = $requete3->fetchAll();
         <div class="video-wrapper">
           <iframe width="600" height="500" src="<?php echo$affiche["annonce_film"]; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-<footer>
-  <h3>Contact</h3>
-            <div class="footer-icons">
-                
-                <div class="twitter">
-                    <a href="http://twitter.fr" class="network">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </div>
-    
-                <div class="facebook">
-                    <a href="http://facebook.fr" class="network">
-                    <i class="fa fa-facebook"></i>
-                    </a>
-                </div>
-    
-                <div class="instagram">
-                    <a href="http://instagram.fr" class="network">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-    
-    
-    
-            <div class="arrow">
-                <a href="#">
-                    <i class="fa fa-sort-up"></i>
-                </a>
-            </div>
-            <p>Metropolis - copyright © 2022</p>
-</footer>
+
+
+          <?php include("assets/include/footer.php") ?>
 </body>

@@ -26,6 +26,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
         {
            $_SESSION['username'] = $email;
            header('Location: acceuil.php');
+           
         }
         else
         {

@@ -1,0 +1,143 @@
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 160px 50px 5 50px;
+    height: 18%;
+    background: rgba(26, 24, 24, 0.74);
+   padding-top: 30px;
+  
+  }
+  
+  footer p {
+  
+    font-family: 'Merienda', cursive;
+    color:white
+  }
+  
+  footer h3 {
+    padding: 15px 0 60px 0;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .footer-icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin-top: 0;
+    color: white;
+  }
+  .network {
+    font-size: 4em;
+    border: 1px solid #d6d6d6;
+    padding: 30px 45px;
+    color: #ffffff;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .network:hover {
+    background: #353535;
+    color: #e2dedb;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .arrow {
+    margin: -20 auto;
+    margin-top: 5%;
+    padding-top: 15px;
+    margin-bottom: 0;
+    font-family: 'Merienda', cursive;
+    color: #312f2f;
+  }
+  
+  
+  .arrow a {
+    font-size: 3em;
+    border: none;
+    color: #b9b3b3;
+  }
+  .arrow:hover i {
+    transform: scale(1.6);
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    letter-spacing: 0.7em;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width:324px) and (max-width:600px){
+
+    footer{
+
+        margin-top: 0px;
+       
+      }
+    
+    .footer-icons{
+     
+      display: flex;
+      justify-content: space-between;
+      max-width: 60%;
+      margin-top: 0;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      justify-content: space-evenly;
+      z-index: 50;
+    }
+    
+    .network {
+      font-size: 50px;
+      border: 1px solid #d6d6d6;
+      color: #ffffff;
+      z-index: -1 ;
+      border-radius: 67%;
+    }
+    
+    footer{
+    
+      margin-top: 0px;
+     
+    }
+    
+    .footer-icons{
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin-top: 0;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    
+    .network {
+    font-size: 50px;
+    border: 1px solid #d6d6d6;
+    color: #ffffff;
+    z-index: -1 !important;
+    border-radius: 67%;
+    }
+    
+    .twitter {
+    
+    margin-bottom: 80px;
+    }
+    
+    .facebook{
+    
+    margin-bottom: 80px;
+    }
+    
+    .instagram{
+    
+    margin-bottom: 80px;
+    }
+    }
+
