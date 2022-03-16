@@ -1,25 +1,47 @@
 <?php
-$link = mysqli_connect("localhost", "root", "", "metropolis");
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+include "config.php";
+
+$nom = $_POST['nom'];
+$prenom = $_POST['prenom'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+$password1 = $_POST['confirmpassword'];
+
+
+
+if ($password == $password1){
+    $mdp = password_hash( $mdp, PASSWORD_DEFAULT);    
+
+    $sql="SELECT * FROM client WHERE mail_client = :mail_client";
+    $requete= $bdd->prepare($sql);
+    $requete->execute(array(
+        "mail_client" => $email
+    ));
+
+    $testmail = 0;
+    while($resultat = $requete->fetch()) {
+
+        if ($email == $resultat['mail_client']) {
+
+            $testmail = 1 ;
+        }
+    }
+
+
+    if ($testmail == 0) {
+
+    $sql = "INSERT INTO client (nom_client, prenom_client, mail_client, mdp_client) VALUES (:nom_client, :prenom_client, :mail_client, :mdp_client)";
+    $requete= $bdd->prepare($sql);
+    $requete->execute(array(
+        ":nom_client" => $nom,
+        "prenom_client" => $prenom,
+        "mail_client" => $email,
+        "mdp_client" => $password
+    )); 
+    header ("location: connexion.php?message=succes");
+
+    }else{header('location: inscrire.php?message=error2');}
+}else{
+
+    header ("location: inscrire.php?message=error");
 }
- 
-// Escape user inputs for security
-$nom = mysqli_real_escape_string($link, $_REQUEST['nom']);
-$prenom = mysqli_real_escape_string($link, $_REQUEST['prenom']);
-$email = mysqli_real_escape_string($link, $_REQUEST['email']);
-$password = mysqli_real_escape_string($link, $_REQUEST['password']);
- 
-// Attempt insert query execution
-$sql = "INSERT INTO client (nom_client, prenom_client, mail_client, mdp_client) VALUES ('$nom', '$prenom', '$email', '$password')";
-if(mysqli_query($link, $sql)){
-     header('Location: acceuil.php');
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-}
- 
-// Close connection
-mysqli_close($link);
-?>

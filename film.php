@@ -46,6 +46,7 @@ $affiche3 = $requete3->fetchAll();
             .background {
               background: url(<?php echo $affiche["affiche_film"]; ?>);
               background-size:cover;
+             
             }
           </style>
         </div>

@@ -20,6 +20,19 @@
 <div class=login-form>
     <form action="traitementco.php" method="post">
         <div class="form-control">
+            <h1>Connexion</h1>
+            <?php
+
+            if (isset($_GET['message'])) {
+                if ($_GET['message'] == "succes") {
+
+                echo "Vous êtes bien inscrit";
+                }
+            }
+
+          
+            ?>
+            <br><br>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" >
         </div>

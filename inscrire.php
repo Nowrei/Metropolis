@@ -19,6 +19,24 @@
 
     <form action="traitementinscri.php" method="post">
         <div class="form-control">
+            <h1>Inscription</h1>
+            <?php
+
+            if (isset($_GET['message'])) {
+                if ($_GET['message'] == "error") {
+
+                echo "Les mots de passe ne sont pas identiques";
+                }
+
+                if ($_GET['message'] == "error2") {
+
+                    echo "L'email éxiste déjà";
+                        }
+            }
+
+          
+            ?>
+            <br><br>
             <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom">
         </div>
@@ -36,7 +54,7 @@
         </div>
         <div class="form-control">
             <label for="confirmpassword">Confirmer mot de passe</label>
-            <input type="confirmpassword" id="confirmpassword" name="confirmpassword">
+            <input type="password" id="confirmpassword" name="confirmpassword">
         </div>
         <div class="form-control">
             <button type="submit">S'inscrire</button>
