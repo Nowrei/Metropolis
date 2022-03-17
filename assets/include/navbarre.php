@@ -15,6 +15,7 @@
             </div>
             
             <div class="nav-links">
+              <p>Bonjour <?php echo $_SESSION['mail']; ?></p>
               <a href="acceuil.php" >Acceuil</a>
               <a href="#" >Films</a>
               <a href="logout.php" >Déconnexion</a>
@@ -24,5 +25,4 @@
           </div>
         </nav>
 
-        <div id="container">
       

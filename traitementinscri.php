@@ -10,7 +10,7 @@ $password1 = $_POST['confirmpassword'];
 
 
 if ($password == $password1){
-    $mdp = password_hash( $mdp, PASSWORD_DEFAULT);    
+    $password = password_hash( $password, PASSWORD_DEFAULT);    
 
     $sql="SELECT * FROM client WHERE mail_client = :mail_client";
     $requete= $bdd->prepare($sql);

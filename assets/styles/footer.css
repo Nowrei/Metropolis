@@ -141,3 +141,15 @@ footer {
     }
     }
 
+    @media (max-widht: 320px) {
+      .network {
+        font-size: 0.8em;
+        margin-left: -5%;
+        margin: 0;
+      }
+      .footer p {
+        font-size: 1.2em;
+      }
+    }
+    
+

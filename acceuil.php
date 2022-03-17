@@ -1,5 +1,6 @@
 <?php session_start();
-include('config.php'); ?>
+include 'config.php';
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,7 @@ include('config.php'); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
     <link rel="stylesheet" href="assets/styles/acceuil.css">
-    <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link rel="stylesheet" href="assets/styles/navbarre.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,31 +19,7 @@ include('config.php'); ?>
     <script src="https://kit.fontawesome.com/ee02dbcf72.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="sticky">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                <a href="index.php">Metropolis</a>
-              </div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <div class="nav-links">
-              <a href="#" >Acceuil</a>
-              <a href="#" >Films</a>
-              <a href="logout.php" >Déconnexion</a>
-              
-    
-            </div>
-          </div>
-        </nav>
+<?php include("assets/include/navbarre.php") ?>
 
         <div id="container">
       
@@ -118,38 +95,8 @@ include('config.php'); ?>
 </div>
 
 
-   <footer>
-    <h3>Contact</h3>
-    <div class="footer-icons">
-        
-        <div class="twitter">
-            <a href="http://twitter.fr" class="network">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </div>
+<?php include("assets/include/footer.php") ?>
 
-        <div class="facebook">
-            <a href="http://facebook.fr" class="network">
-                <i class="fa fa-facebook"></i>
-            </a>
-        </div>
-
-        <div class="instagram">
-            <a href="http://instagram.fr" class="network">
-                <i class="fa fa-instagram"></i>
-            </a>
-        </div>
-    </div>
-
-
-
-    <div class="arrow">
-        <a href="#">
-            <i class="fa fa-sort-up"></i>
-        </a>
-    </div>
-    <p>Metropolis - copyright © 2022</p>
-</footer>
 
 
 

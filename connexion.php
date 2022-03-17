@@ -30,6 +30,20 @@
                 }
             }
 
+            if (isset($_GET['message'])) {
+                if ($_GET['message'] == "error") {
+
+                echo "Vous n'êtes pas inscrit";
+                }
+            }
+
+            if (isset($_GET['message'])) {
+                if ($_GET['message'] == "error2") {
+
+                echo "Mauvais mot de passe";
+                }
+            }
+
           
             ?>
             <br><br>
