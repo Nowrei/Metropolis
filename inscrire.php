@@ -78,5 +78,5 @@ if(!isset($_SESSION['prenom'])) {
 </html>
 <?php }
 
-else{header("location:acceuil.php");}
+else{header("location:accueil.php");}
         ?>
