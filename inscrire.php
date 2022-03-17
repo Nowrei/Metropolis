@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(!isset($_SESSION['prenom'])) {
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,3 +75,8 @@
     <script src="assets/js/connexion.js">
     </script>
 </body>
+</html>
+<?php }
+
+else{header("location:acceuil.php");}
+        ?>

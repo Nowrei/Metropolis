@@ -15,10 +15,23 @@
             </div>
             
             <div class="nav-links">
-              <p>Bonjour <?php echo $_SESSION['mail']; ?></p>
+
+            <?php 
+            if (isset($_SESSION['prenom'])) {
+              ?>
+              <a hreh=#>Bonjour <?php echo $_SESSION['prenom']; ?> <?php echo $_SESSION['nom'];?></a>
+
+              <?php } ?>
               <a href="acceuil.php" >Acceuil</a>
               <a href="#" >Films</a>
+              <?php
+              if (isset($_SESSION['prenom'])) { ?>
               <a href="logout.php" >Déconnexion</a>
+              <?php }else { ?>
+             
+              
+              <a href="connexion.php" >Connexion</a>
+              <?php } ?>
               
     
             </div>

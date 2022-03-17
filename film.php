@@ -1,5 +1,7 @@
 <?php session_start();
-include 'config.php'; ?>
+include 'config.php'; 
+if(isset($_SESSION['prenom'])) {?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -90,3 +92,10 @@ $affiche3 = $requete3->fetchAll();
 
           <?php include("assets/include/footer.php") ?>
 </body>
+</html>
+
+<?php }
+
+else{
+  header("location:connexion.php");
+}

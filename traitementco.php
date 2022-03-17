@@ -19,7 +19,8 @@ if ( $count == 1) {
                 if (password_verify($password,$resultat['mdp_client'])) {
                     session_start();
                     $_SESSION['id'] = $resultat['id_client'];
-                    $_SESSION['mail'] = $resultat['mail_client'];
+                    $_SESSION['nom'] = $resultat['nom_client'];
+                    $_SESSION['prenom'] = $resultat['prenom_client'];
                     header("location:acceuil.php");
 
 
