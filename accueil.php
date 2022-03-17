@@ -1,5 +1,7 @@
 <?php session_start();
 include 'config.php';
+$requete = $bdd->prepare('SELECT * FROM film WHERE id_film');
+    $requete->execute();
  ?>
 
 <!DOCTYPE html>
@@ -9,7 +11,7 @@ include 'config.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
-    <link rel="stylesheet" href="assets/styles/acceuil.css">
+    <link rel="stylesheet" href="assets/styles/accueil.css">
     <link rel="stylesheet" href="assets/styles/navbarre.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,63 +38,23 @@ include 'config.php';
   
         <div class="framebox">
           <hr>
-          <h2>Expressionime Allemand</h2>
+          <h2>Nos films</h2>
           <hr>
           <div class="owl-carousel">
-         <a class="item item1" href="film.php?id_film=1"></a>
-         <a class="item item2" href="film.php?id_film=2"></a>
-         <a class="item item3" href="film.php?id_film=3"></a>
-         <a class="item item4" href="film.php?id_film=4"></a>
-         <a class="item item5" href="film.php?id_film=5"></a>
+          <?php
+          $requete = $bdd->prepare('SELECT * FROM film WHERE id_film');
+          $requete->execute();
+                                while($row=$requete->fetch())
+                                
+                                {
+                                ?>
+         <a class="item item" href="film.php?id_film=<?php echo $row['id_film'];?>"><img src ="<?php echo $row['bande_film'];?>"/></a>
+         <?php
+                                }
+                                ?>
      </div>
-     </div>
 </div>
 
-
-     <div class="burlesque">
-      <div class="framebox">
-        <hr>
-        <h2>Burlesque des années 20</h2>
-        <hr>
-        <div class="owl-carousel">
-       <a class="item item1" href="film.php?id_film=6"></a>
-       <a class="item item2" href="film.php?id_film=7"></a>
-       <a class="item item3" href="film.php?id_film=8"></a>
-       <a class="item item4" href="film.php?id_film=9"></a>
-       <a class="item item5" href="film.php?id_film=10"></a>
-   </div>
-   </div>
-   </div>
-
-   <div class="spaghetti">
-    <div class="framebox">
-      <hr>
-      <h2>Western</h2>
-      <hr>
-      <div class="owl-carousel">
-     <a class="item item1" href="film.php?id_film=11"></a>
-     <a class="item item2" href="film.php?id_film=12"></a>
-     <a class="item item3" href="film.php?id_film=13"></a>
-     <a class="item item4" href="film.php?id_film=14"></a>
-     <a class="item item5" href="film.php?id_film=15"></a>
- </div>
- </div>
- </div>
-
- <div class="français">
-  <div class="framebox">  
-    <hr>
-    <h2>Cinéma français</h2>
-    <hr>
-    <div class="owl-carousel">
-   <a class="item item1" href="film.php?id_film=16"></a>
-   <a class="item item2" href="film.php?id_film=17"></a>
-   <a class="item item3" href="film.php?id_film=18"></a>
-   <a class="item item4" href="film.php?id_film=19"></a>
-   <a class="item item5" href="film.php?id_film=20"></a>
-</div>
-</div>
-</div>
 
 
 <?php include("assets/include/footer.php") ?>

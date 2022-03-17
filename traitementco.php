@@ -21,7 +21,7 @@ if ( $count == 1) {
                     $_SESSION['id'] = $resultat['id_client'];
                     $_SESSION['nom'] = $resultat['nom_client'];
                     $_SESSION['prenom'] = $resultat['prenom_client'];
-                    header("location:acceuil.php");
+                    header("location:accueil.php");
 
 
 
