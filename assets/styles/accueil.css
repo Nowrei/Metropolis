@@ -9,100 +9,164 @@ body {
 }
 
 
-#container {
-  height: 600px;
+.gallery {
   width: 100%;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+}
+
+.gallery-container {
   align-items: center;
-  box-sizing: border-box;
-}
-
-#mainView {
- 
-  height: 684px;
-  width: 468px;
-  border-radius: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  z-index: 1;
-  transition: all 1s;
-  margin-top: 120px;
-
-}
-
-
-#leftView {
-  height: 500px;
-  width: 150px;
-  opacity: 0.5;
-  border-radius: 5px;
-  transform: skewy(5deg);
-  transform-origin: top right;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s;
-  margin-top: 180px;
-  
-}
-#leftView:hover {
-  opacity: 1;
-  transition: all 1s;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
 }
 
-#rightView {
-  height: 500px;
-  width: 150px;
-  opacity: 0.5;
-  border-radius: 5px;
-  transform: skewy(-5deg);
-  transform-origin: top left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s;
-  margin-top: 180px;
-  
-}
-
-#rightView:hover {
-  opacity: 1;
-  transition: all 1s;
-}
-
-.navBtns {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
+.gallery-item {
+  height: 150px;
+  opacity: 0;
   position: absolute;
-  opacity: 0.8;
-  background-color: transparent;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  z-index: 0;
 }
 
-.navBtns:hover {
+.gallery-item a {
+  height: 150px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  z-index: 0;
+}
+
+.gallery-item-1 {
+  left: 15%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+  height: 200px;
   opacity: 1;
-  transition: all 1s;
-  
-}
-#navLeft {
-  left: 50px;
-}
-
-#navRight {
-  right: 50px;
-}
-
-#linkTag {
- 
-  cursor: pointer;
+  width: 200px;
   z-index: 1;
-  box-sizing: border-box;
+}
+
+.gallery-item-2 {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+ 
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 2;
+}
+
+.gallery-item-4 {
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+  left: 85%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 20px;
+  padding: 0 12px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}
+
+.gallery-controls-previous {
+  position: relative;
+}
+
+.gallery-controls-previous::before {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  left: -10px;
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.15s ease-in-out;
+  width: 4px;
+}
+
+.gallery-controls-previous:hover::before {
+  left: -18px;
+}
+
+.gallery-controls-next {
+  position: relative;
+}
+
+.gallery-controls-next::before {
+  border: solid rgb(255, 254, 254);
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  padding: 2px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 4px;
+}
+
+.gallery-controls-next:hover::before {
+  right: -18px;
+}
+
+.gallery-nav {
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gallery-nav li {
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected {
+  background: #555;
 }
 
 body .owl-carousel.owl-loading {
@@ -115,7 +179,7 @@ body .owl-carousel.owl-loading {
     width: 95%;
     margin: auto;
     padding-top: 10px;
-    margin-top: 284px;
+    margin-top: 65px;
 }
 
 
@@ -194,7 +258,7 @@ body .owl-carousel .owl-nav.disabled {
 @media screen and (min-width:324px) and (max-width:600px){
 
 
-  #container {
+  .galery  {
 
     display: none;
   }

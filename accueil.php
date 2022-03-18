@@ -23,16 +23,22 @@ $requete = $bdd->prepare('SELECT * FROM film WHERE id_film');
 <body>
 <?php include("assets/include/navbarre.php") ?>
 
-        <div id="container">
-      
-          <div id="leftView"></div>
-          <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
-          <a id="linkTag">
-          <div id="mainView"></div>
-          </a>
-          <div id="rightView"></div>
-          <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
-        </div>
+  <div class="gallery">
+    <div class="gallery-container">
+    <?php
+          $requete = $bdd->prepare('SELECT * FROM film WHERE id_film');
+          $requete->execute();
+                                while($row=$requete->fetch())
+                                
+                                {
+                                ?>
+      <img class="gallery-item gallery-item-1" src="<?php echo $row['bande_film'];?>">
+
+      <?php }
+      ?>
+    </div>
+    <div class="gallery-controls"></div>
+  </div>
 
 <div class="allemand">
   
@@ -54,7 +60,6 @@ $requete = $bdd->prepare('SELECT * FROM film WHERE id_film');
                                 ?>
      </div>
 </div>
-
 
 
 <?php include("assets/include/footer.php") ?>
