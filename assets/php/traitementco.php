@@ -21,12 +21,12 @@ if ( $count == 1) {
                     $_SESSION['id'] = $resultat['id_client'];
                     $_SESSION['nom'] = $resultat['nom_client'];
                     $_SESSION['prenom'] = $resultat['prenom_client'];
-                    header("location:accueil.php");
+                    header("location:../../accueil.php");
 
 
 
                 }else{
-                    header("location:connexion.php?message=error2");
+                    header("location:../../connexion.php?message=error2");
                 }
 
             }
@@ -34,6 +34,7 @@ if ( $count == 1) {
 
 
         }
-        else{header("location:connexion.php?message=error");}
+        else{header("location:../../connexion.php?message=error");}
+
 
 

@@ -1,5 +1,5 @@
 <?php session_start();
-include 'config.php'; 
+include 'assets/php/config.php'; 
 if(isset($_SESSION['prenom'])) {?>
 
 

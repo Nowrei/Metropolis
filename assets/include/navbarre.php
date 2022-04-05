@@ -22,7 +22,7 @@
               <a hreh=#>Bonjour <?php echo $_SESSION['prenom']; ?> <?php echo $_SESSION['nom'];?></a>
 
               <?php } ?>
-              <a href="acceuil.php" >Acceuil</a>
+              <a href="accueil.php" >Acceuil</a>
               <a href="#" >Films</a>
               <?php
               if (isset($_SESSION['prenom'])) { ?>

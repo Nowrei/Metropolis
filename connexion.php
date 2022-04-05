@@ -1,5 +1,8 @@
 <?php 
 session_start();
+require 'assets/class/form.php';
+require 'assets/class/formulaire.php';
+$form = new Style ($_POST);
 if(!isset($_SESSION['prenom'])) {
 
 ?>
@@ -20,9 +23,7 @@ if(!isset($_SESSION['prenom'])) {
 
 <body>
 <a href="index.php" class ="Buttonretc">Précédent</a>
-
-<div class=login-form>
-    <form action="traitementco.php" method="post">
+    <form action="assets/php/traitementco.php" method="post">
         <div class="form-control">
             <h1>Connexion</h1>
             <?php
@@ -51,20 +52,15 @@ if(!isset($_SESSION['prenom'])) {
           
             ?>
             <br><br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" >
-        </div>
-        <div class="form-control">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" >
-        </div>
-        <div class="form-control">
-            <button type="submit" name="submit">Connexion</button>
-            <p>Pas encore de compte? <a href="inscrire.php">Inscris-toi ici</a></p>
+
+            <?php
+    echo $form->input('email');
+    echo $form->input('password');
+    echo $form->submit();
+    ?>
         </div>
     </form>
-</div>
-   
+
    
 </body>
 </html>

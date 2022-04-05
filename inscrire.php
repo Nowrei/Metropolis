@@ -1,5 +1,8 @@
 <?php 
 session_start();
+require 'assets/class/form.php';
+require 'assets/class/formulaire.php';
+$form = new Style ($_POST);
 if(!isset($_SESSION['prenom'])) {
 
 ?>
@@ -23,8 +26,8 @@ if(!isset($_SESSION['prenom'])) {
 
 <div class=login-form>
 
-    <form action="traitementinscri.php" method="post">
-        <div class="form-control">
+    <form action="assets/php/traitementinscri.php" method="post">
+        
             <h1>Inscription</h1>
             <?php
 
@@ -43,31 +46,14 @@ if(!isset($_SESSION['prenom'])) {
           
             ?>
             <br><br>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom">
-        </div>
-        <div class="form-control">
-            <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom">
-        </div>
-        <div class="form-control">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-        </div>
-        <div class="form-control">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password">
-        </div>
-        <div class="form-control">
-            <label for="confirmpassword">Confirmer mot de passe</label>
-            <input type="password" id="confirmpassword" name="confirmpassword">
-        </div>
-        <div class="form-control">
-            <button type="submit">S'inscrire</button>
-        </div>
-        <div id="errors">
-            <ul></ul>
-        </div>
+
+            <?php
+            echo $form->input('nom');
+            echo $form->input('prenom');
+            echo $form->input('email');
+            echo $form->input('password');
+            echo $form->submit();
+    ?>
         <p>Vous possédez déjà un compte ? <a href="connexion.php">Connexion</a></p>
     </form>
 </div>

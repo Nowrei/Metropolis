@@ -19,9 +19,9 @@ if ($password == $password1){
     ));
 
     $testmail = 0;
-    while($resultat = $requete->fetch()) {
+        while($resultat = $requete->fetch()) {
 
-        if ($email == $resultat['mail_client']) {
+          if ($email == $resultat['mail_client']) {
 
             $testmail = 1 ;
         }
@@ -38,10 +38,10 @@ if ($password == $password1){
         "mail_client" => $email,
         "mdp_client" => $password
     )); 
-    header ("location: connexion.php?message=succes");
+    header ("location: ../../connexion.php?message=succes");
 
-    }else{header('location: inscrire.php?message=error2');}
+    }else{header('location: ../../inscrire.php?message=error2');}
 }else{
 
-    header ("location: inscrire.php?message=error");
+    header ("location: ../../inscrire.php?message=error");
 }
