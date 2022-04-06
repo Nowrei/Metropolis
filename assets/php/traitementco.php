@@ -1,8 +1,8 @@
 <?php
 include 'config.php';
 
-$email = $_POST['email'];
-$password = $_POST['password'];
+$email = $_POST['Email'];
+$password = $_POST['Password'];
 
 $sql = "SELECT * FROM client WHERE mail_client = :mail_client";
 $requete= $bdd->prepare($sql);

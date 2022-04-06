@@ -1,8 +1,8 @@
 <?php 
 session_start();
-require 'assets/class/form.php';
-require 'assets/class/formulaire.php';
-$form = new Style ($_POST);
+require 'assets/class/autoloader.php';
+Autoloader::register();
+$form = new formulaire ($_POST);
 if(!isset($_SESSION['prenom'])) {
 
 ?>
@@ -48,10 +48,11 @@ if(!isset($_SESSION['prenom'])) {
             <br><br>
 
             <?php
-            echo $form->input('nom');
-            echo $form->input('prenom');
-            echo $form->input('email');
-            echo $form->input('password');
+            echo $form->input('Nom');
+            echo $form->input('Prenom');
+            echo $form->input('Email');
+            echo $form->input('Password');
+            echo $form->input('Password');
             echo $form->submit();
     ?>
         <p>Vous possédez déjà un compte ? <a href="connexion.php">Connexion</a></p>

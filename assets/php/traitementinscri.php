@@ -1,11 +1,11 @@
 <?php
 include "config.php";
 
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$password1 = $_POST['confirmpassword'];
+$nom = $_POST['Nom'];
+$prenom = $_POST['Prenom'];
+$email = $_POST['Email'];
+$password = $_POST['Password'];
+$password1 = $_POST['ConfirmPassword'];
 
 
 
