@@ -1,6 +1,6 @@
 <?php
 
-class formulaire extends Form {
+class formulaire extends form {
 
     protected function surround($html){
 

@@ -1,6 +1,6 @@
 <?php
 
-class password extends Form {
+class password extends form {
 
     protected function surround($html){
 

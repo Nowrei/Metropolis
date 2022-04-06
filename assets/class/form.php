@@ -1,6 +1,6 @@
 <?php
 
-class Form{
+class form{
 
 protected $data;
 public $surround = 'p';
