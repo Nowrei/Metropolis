@@ -26,7 +26,7 @@
               <a href="#" >Films</a>
               <?php
               if (isset($_SESSION['prenom'])) { ?>
-              <a href="logout.php" >Déconnexion</a>
+              <a href="assets/php/logout.php" >Déconnexion</a>
               <?php }else { ?>
              
               

@@ -3,6 +3,7 @@ session_start();
 require 'assets/class/autoloader.php';
 Autoloader::register();
 $form = new formulaire ($_POST);
+$form1 = new password ($_POST);
 if(!isset($_SESSION['prenom'])) {
 
 ?>
@@ -55,9 +56,10 @@ if(!isset($_SESSION['prenom'])) {
 
             <?php
     echo $form->input('Email');
-    echo $form->input('Password');
+    echo $form1->input('Mot de passe');
     echo $form->submit();
     ?>
+    <p>Par encore inscrit ? <a href="inscrire.php">S'incrire</a></p>
         </div>
     </form>
 

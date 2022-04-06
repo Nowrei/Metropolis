@@ -1,6 +1,6 @@
 <?php
 
-class formulaire extends Form {
+class password extends Form {
 
     protected function surround($html){
 
@@ -11,6 +11,6 @@ class formulaire extends Form {
     public function input($name){
 
         return $this->surround(
-            '<label>' . $name . '</label>' . '<input type="text" name="' . $name . '" value="' . $this->getValue($name) .'" class="form-control">');
+            '<label>' . $name . '</label>' . '<input type="password" name="' . $name . '" value="' . $this->getValue($name) .'" class="form-control">');
     }
 }

@@ -3,6 +3,7 @@ session_start();
 require 'assets/class/autoloader.php';
 Autoloader::register();
 $form = new formulaire ($_POST);
+$form1 = new password ($_POST);
 if(!isset($_SESSION['prenom'])) {
 
 ?>
@@ -49,10 +50,10 @@ if(!isset($_SESSION['prenom'])) {
 
             <?php
             echo $form->input('Nom');
-            echo $form->input('Prenom');
+            echo $form->input('Prénom');
             echo $form->input('Email');
-            echo $form->input('Password');
-            echo $form->input('Password');
+            echo $form1->input('Mot de passe');
+            echo $form1->input('Confirmer mot de passe');
             echo $form->submit();
     ?>
         <p>Vous possédez déjà un compte ? <a href="connexion.php">Connexion</a></p>

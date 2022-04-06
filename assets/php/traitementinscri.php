@@ -2,10 +2,10 @@
 include "config.php";
 
 $nom = $_POST['Nom'];
-$prenom = $_POST['Prenom'];
+$prenom = $_POST['Prénom'];
 $email = $_POST['Email'];
-$password = $_POST['Password'];
-$password1 = $_POST['ConfirmPassword'];
+$password = $_POST['Mot de passe'];
+$password1 = $_POST['Confirmer mot de passe'];
 
 
 
@@ -34,9 +34,9 @@ if ($password == $password1){
     $requete= $bdd->prepare($sql);
     $requete->execute(array(
         ":nom_client" => $nom,
-        "prenom_client" => $prenom,
-        "mail_client" => $email,
-        "mdp_client" => $password
+        ":prenom_client" => $prenom,
+        ":mail_client" => $email,
+        ":mdp_client" => $password
     )); 
     header ("location: ../../connexion.php?message=succes");
 
