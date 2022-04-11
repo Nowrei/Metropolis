@@ -31,18 +31,18 @@
              
                 <label class="dropdown">
 
-<div class="dd-button">
-  Connexion/Inscription
-</div>
+                  <div class="dd-button">
+                  Connexion/Inscription
+                  </div>
 
-<input type="checkbox" class="dd-input" id="test">
+                  <input type="checkbox" class="dd-input" id="test">
 
-<ul class="dd-menu">
-  <li><a href="connexion.php" >Connexion</a></li>
-  <li><a href="inscrire.php" >S'inscrire</a></li>
-</ul>
+                <ul class="dd-menu">
+                  <li><a href="connexion.php">Connexion</a></li>
+                  <li><a href="inscrire.php">S'inscrire</a></li>
+                </ul>
 
-</label>
+                </label>
               <?php } ?>
               
     
